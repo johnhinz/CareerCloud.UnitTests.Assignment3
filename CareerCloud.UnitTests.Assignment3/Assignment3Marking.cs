@@ -873,7 +873,7 @@ namespace CareerCloud.UnitTests.Assignment3
             catch (AggregateException e)
             {
                 IEnumerable<ValidationException> exceptions = e.InnerExceptions.Cast<ValidationException>();
-                Assert.IsTrue(exceptions.Any(ex => ex.Code == 501));
+                Assert.IsTrue(exceptions.Any(ex => ex.Code == 502));
             }
         }
 
