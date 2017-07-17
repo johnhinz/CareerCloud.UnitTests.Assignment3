@@ -873,7 +873,7 @@ namespace CareerCloud.UnitTests.Assignment3
             catch (AggregateException e)
             {
                 IEnumerable<ValidationException> exceptions = e.InnerExceptions.Cast<ValidationException>();
-                Assert.IsTrue(exceptions.Any(ex => ex.Code == 501));
+                Assert.IsTrue(exceptions.Any(ex => ex.Code == 502));
             }
         }
 
@@ -960,7 +960,7 @@ namespace CareerCloud.UnitTests.Assignment3
             catch (AggregateException e )
             {
                 IEnumerable<ValidationException> exceptions = e.InnerExceptions.Cast<ValidationException>();
-                Assert.IsTrue(exceptions.Any(ex => ex.Code == 601));
+                Assert.IsTrue(exceptions.Any(ex => ex.Code == 600));
             }
         }
 
@@ -977,7 +977,7 @@ namespace CareerCloud.UnitTests.Assignment3
             catch (AggregateException e)
             {
                 IEnumerable<ValidationException> exceptions = e.InnerExceptions.Cast<ValidationException>();
-                Assert.IsTrue(exceptions.Any(ex => ex.Code == 601));
+                Assert.IsTrue(exceptions.Any(ex => ex.Code == 600));
             }
         }
 
