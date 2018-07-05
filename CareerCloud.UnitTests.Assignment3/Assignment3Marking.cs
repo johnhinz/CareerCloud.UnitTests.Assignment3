@@ -4,7 +4,7 @@ using Moq;
 using CareerCloud.DataAccessLayer;
 using CareerCloud.Pocos;
 using CareerCloud.BusinessLogicLayer;
-using CareerCloud.ADODataAccessLayer;
+//using CareerCloud.ADODataAccessLayer;
 using System.Reflection;
 using System.Linq;
 using System.Collections.Generic;
