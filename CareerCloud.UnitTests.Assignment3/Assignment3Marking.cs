@@ -4,7 +4,6 @@ using Moq;
 using CareerCloud.DataAccessLayer;
 using CareerCloud.Pocos;
 using CareerCloud.BusinessLogicLayer;
-//using CareerCloud.ADODataAccessLayer;
 using System.Reflection;
 using System.Linq;
 using System.Collections.Generic;
@@ -1178,6 +1177,31 @@ namespace CareerCloud.UnitTests.Assignment3
         #endregion SecurityRole_Tests
 
         #region SystemCountryCode_Tests
+
+        [TestMethod]
+        public void SystemCountryCode_MethodExists_Get_Test()
+        {
+            Type tCode = _types.Where(t => t.Name == "SystemCountryCodeLogic").FirstOrDefault();
+            MemberInfo[] member = tCode.GetMember("Get");
+            Assert.IsTrue(member.Count() > 0, "SystemCountryCodeLogic class is missing a Get method");
+        }
+
+        [TestMethod]
+        public void SystemCountryCode_MethodExists_GetAll_Test()
+        {
+            Type tCode = _types.Where(t => t.Name == "SystemCountryCodeLogic").FirstOrDefault();
+            MemberInfo[] member = tCode.GetMember("GetAll");
+            Assert.IsTrue(member.Count() > 0, "SystemCountryCodeLogic class is missing a GetAll method");
+        }
+
+        [TestMethod]
+        public void SystemCountryCode_MethodExists_Delete_Test()
+        {
+            Type tCode = _types.Where(t => t.Name == "SystemCountryCodeLogic").FirstOrDefault();
+            MemberInfo[] member = tCode.GetMember("Delete");
+            Assert.IsTrue(member.Count() > 0, "SystemCountryCodeLogic class is missing a Delete method");
+        }
+
         [TestMethod]
         public void SystemCountryCode_CodeRequired_Add_Test()
         {
@@ -1248,6 +1272,31 @@ namespace CareerCloud.UnitTests.Assignment3
         #endregion SystemCountryCode_Tests
 
         #region SystemLanguageCode_Tests
+
+        [TestMethod]
+        public void SystemLanguageCode_MethodExists_Get_Test()
+        {
+            Type tCode = _types.Where(t => t.Name == "SystemLanguageCodeLogic").FirstOrDefault();
+            MemberInfo[] member = tCode.GetMember("Get");
+            Assert.IsTrue(member.Count() > 0, "SystemLanguageCodeLogic class is missing a Get method");
+        }
+
+        [TestMethod]
+        public void SystemLanguageCode_MethodExists_GetAll_Test()
+        {
+            Type tCode = _types.Where(t => t.Name == "SystemLanguageCodeLogic").FirstOrDefault();
+            MemberInfo[] member = tCode.GetMember("GetAll");
+            Assert.IsTrue(member.Count() > 0, "SystemLanguageCodeLogic class is missing a GetAll method");
+        }
+
+        [TestMethod]
+        public void SystemLanguageCode_MethodExists_Delete_Test()
+        {
+            Type tCode = _types.Where(t => t.Name == "SystemLanguageCodeLogic").FirstOrDefault();
+            MemberInfo[] member = tCode.GetMember("Delete");
+            Assert.IsTrue(member.Count() > 0, "SystemLanguageCodeLogic class is missing a Delete method");
+        }
+
         [TestMethod]
         public void SystemLanguageCode_LanguageIdRequired_Add_Test()
         {
