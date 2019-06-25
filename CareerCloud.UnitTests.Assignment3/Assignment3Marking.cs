@@ -77,7 +77,7 @@ namespace CareerCloud.UnitTests.Assignment3
             {
                 logic.Add(new ApplicantEducationPoco[]
                     { new ApplicantEducationPoco() { Major = "BA" } });
-                Assert.Fail("No validaton exception generated");
+                Assert.Fail("No validation exception generated");
             }
             catch (AggregateException e)
             {
